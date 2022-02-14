@@ -1,0 +1,89 @@
+<mvc:View
+    controllerName="capg.fiori.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core" 
+    xmlns:layout="sap.ui.layout"
+     xmlns:f="sap.f"
+      xmlns:fb="sap.ui.comp.filterbar"
+       xmlns:vm="sap.ui.comp.variants"
+>
+<App id="app">
+    <f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}">
+			<!-- DynamicPage Title -->
+			<f:title>
+				<f:DynamicPageTitle>
+					<f:heading>
+						<vm:VariantManagement standardItemText="Details of The Student"></vm:VariantManagement>
+					</f:heading>
+				</f:DynamicPageTitle>
+			</f:title>
+			<!-- DynamicPage Header -->
+			<f:header>
+				<f:DynamicPageHeader pinnable="true">
+					<f:content>
+						<fb:FilterBar id="filterbar" useToolbar="false" search="onSearch" showGoOnFB="true" showFilterConfiguration="false">
+							<fb:filterItems>
+								
+								<fb:FilterItem name="A" label="First Name">
+									<fb:control>
+										<Select id="fname" forceSelection="true" change="handleDetails" items="{ path: 'emp>/FirstName' }">
+											<core:Item key="{emp>key}" text="{emp>name}"/>
+										</Select>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem name="B" label="Last Name">
+									<fb:control>
+										<Select id="lname" change="handleDetails" forceSelection="true" items="{ path: 'emp>/LastName' }">
+											<core:Item key="{emp>key}" text="{emp>name}"/>
+										</Select>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem name="C" label="Location">
+									<fb:control>
+										<Select id="loc" change="handleDetails" forceSelection="true" items="{ path: 'emp>/Location' }">
+											<core:Item key="{emp>key}" text="{emp>name}"/>
+										</Select>
+									</fb:control>
+								</fb:FilterItem>
+							</fb:filterItems>
+						</fb:FilterBar>
+					</f:content>
+					<!--<Button text = "Table Data" width ="20%" type="Accept" press="OnGo" />-->
+				</f:DynamicPageHeader>
+			</f:header>
+			<!-- DynamicPage Content -->
+			<f:content>
+				<Table id="Table1" inset="false" items="{ path: 'emp>/ProductCollection' }" >
+					<headerToolbar>
+							<Toolbar>
+								<ToolbarSpacer></ToolbarSpacer>
+								<Button  text="Add Time Slice" press ="Add"/>
+							</Toolbar>
+						</headerToolbar>
+					<columns>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="FirstName"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="LastName"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Location"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem vAlign="Middle" type="Navigation" press="onListItemPressed">
+							<cells>
+								<ObjectIdentifier title="{emp>FirstName}" text="{emp>Number}"/>
+								<Text text="{emp>LastName}"/>
+								<Text text="{emp>Location}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</f:content>
+		</f:DynamicPage>
+	</App>
+</mvc:View>

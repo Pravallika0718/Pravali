@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="capg.fiori.controller.Route"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout" 
+>
+    <Page id="idroute" title="DETAILS" showNavButton="true" navButtonPress="onhandleBack">
+    
+		<content>
+        <HBox  height="100px" alignItems="Center" justifyContent="Start">
+			<Title text="{emp>FirstName}"/>
+		</HBox>
+			<VBox>
+				<Text text="Senior UI Developer"/>
+			</VBox>
+		<IconTabBar id="idIconTabBar" class="sapUiResponsiveContentPadding">
+			<items>
+				<IconTabFilter  icon="sap-icon://hint" text="Personal Info">
+					<form:SimpleForm labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0" maxContainerCols="2"
+						editable="false" layout="ResponsiveGridLayout" width="100%">
+						<!--<Label text="LinkedIn"/>-->
+						<!--<Text text="{employee>Linkedin}"/>-->
+						<Label text="Phone Number"/>
+						<Text text="{emp>PhoneNumber}"/>
+						<Label text="Office Location"/>
+						<Text text="{emp>Office}"/>
+						<Label text="Employee ID"/>
+						<Text text="{emp>EmpID}"/>
+						<Label text="Home Town"/>
+						<Text text="{emp>HT}"/>
+					</form:SimpleForm>
+				</IconTabFilter>
+				<IconTabFilter icon="sap-icon://attachment" text="Attachments">
+					<form:SimpleForm labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0" maxContainerCols="2"
+						editable="false" layout="ResponsiveGridLayout" width="100%">
+						<Label text="Jobrole"/>
+						<Text text="{emp>Jobrole}"/>
+						<Label text="Manager"/>
+						<Text text="{emp>Manager}"/>
+					</form:SimpleForm>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+			<!-- <core:Fragment fragmentName="capg.fiori.view.Filter" type="XML"/> -->
+		</content>
+	</Page>
+</mvc:View>

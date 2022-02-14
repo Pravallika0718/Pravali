@@ -1,0 +1,237 @@
+{
+	"headerExpanded":true,
+	"ProductCollection":[{
+        "Id": "1",
+        "FirstName": "Pravallika",
+        "LastName": "V R",
+        "Number": "5H1",
+        "Location":"Andhra Pradesh",
+        "PhoneNumber":"9876543120",
+         "Office":"Blr",
+         "Jobrole":"Sr Analyst",
+         "Manager":"APPS Europe",
+         "EmpID" : "46041672"
+    }, {
+        "Id": "2",
+        "FirstName": "Harshitha",
+        "LastName": "S",
+        "Number": "5F2",
+        "Location":"Andhra Pradesh",
+        "PhoneNumber":"9876543120",
+         "Office":"Blr",
+         "Jobrole":"Sr Analyst",
+          "Manager":"APPS Europe",
+           "EmpID" : "46041678",
+           "HT"  :"Tirupati"
+    }, {
+        "Id": "3",
+        "FirstName": "Akhila",
+        "LastName": "V",
+        "Number": "5G3",
+        "Location":"Tamilnadu",
+        "PhoneNumber":"9876543120",
+         "Office":"Mumbai",
+         "Jobrole":"Sr Analyst",
+          "Manager":"APPS Europe",
+           "EmpID" : "46041676",
+            "HT"  :"Tirupati"
+},{
+    "Id": "4",
+    "FirstName": "Vennela",
+    "LastName" : "S",
+    "Number": "5E1",
+    "Location":"Tamilnadu",
+    "PhoneNumber":"9876543120",
+     "Office":"PNQ",
+     "Jobrole":"Analyst",
+      "Manager":"I & D",
+       "EmpID" : "46041692",
+        "HT"  :"Tirupati"
+},{
+    "Id": "5",
+    "FirstName": "Ashwini",
+    "LastName" : "Y",
+    "Number" :"5H7",
+    "Location":"Karnataka",
+    "PhoneNumber":"9876543120",
+     "Office":"Blr",
+     "Jobrole":"Sr Analyst",
+      "Manager":"APPS Europe",
+       "EmpID" : "46091672",
+        "HT"  :"Kadapa"
+     
+},
+{
+    "Id": "6",
+    "FirstName": "Tarun",
+    "LastName" : "V",
+    "Number" :"550",
+    "Location":"Kerela",
+    "PhoneNumber":"9876543120",
+     "Office":"Blr",
+     "Jobrole":"Sr Analyst",
+      "Manager":"APPS Europe",
+       "EmpID" : "46041072",
+        "HT"  :"Tirupati"
+},
+{
+    "Id": "7",
+    "FirstName": "Ramana Reddy",
+    "LastName" : "Y",
+    "Number" :"543",
+    "Location":"Kerela",
+    "PhoneNumber":"9876543120",
+     "Office":"Blr",
+     "Jobrole":"Sr Analyst",
+      "Manager":"APPS Europe",
+       "EmpID" : "46048672",
+        "HT"  :"Chittoor"
+},
+{
+    "Id": "8",
+    "FirstName": "Jamuna",
+    "LastName" : "V",
+    "Number" :"590",
+    "Location":"Jammu and Kasmir",
+    "PhoneNumber":"9876543120",
+     "Office":"Blr",
+     "Jobrole":"Sr Analyst",
+      "Manager":"APPS Europe",
+       "EmpID" : "46841672",
+        "HT"  :"Chittoor"
+},
+{
+    "Id": "9",
+    "FirstName": "Alekhya",
+    "LastName" : "K",
+    "Number" :"501",
+    "Location":"Mumbai",
+    "PhoneNumber":"9876543120",
+     "Office":"Blr",
+     "Jobrole":"Sr Analyst",
+      "Manager":"APPS Europe",
+       "EmpID" : "46081672",
+        "HT"  :"Tirupati"
+},
+{
+    "Id": "10",
+    "FirstName": "Shasank",
+    "LastName" : "K",
+    "Number" :"570",
+    "Location":"Mumbai",
+    "PhoneNumber":"9876543120",
+    "Office":"Blr",
+    "Jobrole":"Sr Analyst",
+    "Manager":"APPS Europe",
+     "EmpID" : "46041609",
+      "HT"  :"Tirupati"
+    
+}],
+  "FirstName" : [
+  	 {
+      "key" : "",
+      "name" : "All"
+    },
+    {
+      "key" : "Pravallika",
+      "name" : "Pravallika"
+    },
+    {
+      "key" : "Alekhya",
+      "name" : "Alekhya"
+    },
+    {
+      "key" : "Akhila",
+      "name" : "Akhila"
+    },
+    {
+      "key" : "Ashwini",
+      "name" : "Ashwini"
+    },
+    {
+      "key" : "Harshitha",
+      "name" : "Harshitha"
+    },
+    {
+      "key" : "Shasank",
+      "name" : "Shasank"
+    },
+    {
+      "key" : "Tarun",
+      "name" : "Tarun"
+    },
+    {
+      "key" : "Jamuna",
+      "name" : "Jamuna"
+    },
+    {
+      "key" : "Ramana Reddy",
+      "name" : "Ramana Reddy"
+    }
+  ],
+  "LastName" : [
+  	 {
+      "key" : "",
+      "name" : "All"
+    },
+    {
+      "key" : "R",
+      "name" : "R"
+    },
+    {
+      "key" : "K",
+      "name" : "K"
+    },
+    {
+      "key" : "V",
+      "name" : "V"
+    },
+    {
+      "key" : "Y",
+      "name" : "Y"
+    },
+    {
+      "key" : "S",
+      "name" : "S"
+    },
+    {
+      "key" : "K",
+      "name" : "K"
+    },
+    {
+      "key" : "V R",
+      "name" : "V R"
+    }
+  ],
+  "Location" : [
+  	 {
+      "key" : "",
+      "name" : "All"
+    },
+    {
+      "key" : "Andhra Pradesh",
+      "name" : "Andhra Pradesh"
+    },
+    {
+      "key" : "Mumbai",
+      "name" : "Mumbai"
+    },
+    {
+      "key" : "Tamilnadu",
+      "name" : "Tamilnadu"
+    },
+    {
+      "key" : "Karnataka",
+      "name" : "Karnataka"
+    },
+    {
+      "key" : "Jammu and Kasmir",
+      "name" : "Jammu and Kasmir"
+    },
+    {
+      "key" : "Kerela",
+      "name" : "Kerela"
+    }
+  ]
+}
+    
